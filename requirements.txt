@@ -1,0 +1,28 @@
+# Core Networking
+requests
+urllib3
+certifi
+charset-normalizer
+
+# Scraping
+beautifulsoup4
+lxml
+
+# Progress & CLI
+tqdm
+rich
+
+# Media Metadata
+mutagen
+brotli
+
+# Async (Coomer forks)
+aiohttp
+aiofiles
+
+# Cookie extraction (gallery-dl)
+browser-cookie3
+
+# Primary Tools
+yt-dlp
+gallery-dl
