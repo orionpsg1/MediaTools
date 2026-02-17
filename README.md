@@ -95,7 +95,28 @@ System Dependencies:
 
 User configurations are stored and referenced in:
 
-    ~.\Users\%userprofile%\Documents\WindowsPowerShell\Modules\MediaTools
+    ~.\Users\%userprofile%\Documents\WindowsPowerShell\Modules\MediaTools\
+
+Example media.config.json:
+{
+  "MediaRoot": " ~.\Users\%userprofile%\\Downloads",
+  "Browser": "YourBrowserOfChoice",
+  "LoggingEnabled": true,
+  "LogFile": "logs\\media.log",
+
+  "YouTube": {
+    "ArchiveFile": "yt-archive.txt",
+    "OutputTemplate": "%(uploader)s/%(upload_date)s - %(title)s.%(ext)s"
+  },
+
+  "GalleryDL": {
+    "OutputTemplate": "{category}/{username}/{filename}.{extension}"
+  },
+
+  "CoomerDL": {
+    "OutputTemplate": "coomer/{creator}/{filename}.{extension}"
+  }
+}
 
 ---
 
