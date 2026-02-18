@@ -115,7 +115,7 @@ function bunkr {
     Write-MediaLog "bunkr $Args"
 
     python3 $BunkrPath `
-        --output $Script:MediaRoot `
+        --custom-path $Script:MediaRoot `
         @Args
 }
 
