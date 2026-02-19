@@ -22,11 +22,12 @@ MediaTools acts as a wrapper for the following external utilities:
 
 | Tool        | Purpose | License |
 |-------------|---------|---------|
-| gallery-dl  | General media downloading | GPL-2.0 |
-| CoomerDL    | Coomer.party downloader | GPL-3.0 |
-| KHInsider script | Game soundtrack downloader | Varies |
-| Python 3.x  | Required runtime | PSF License |
-| Node.js     | Required for certain tools | MIT |
+| gallery-dl      | General media downloading         | GPL-2.0 |
+| CoomerDL        | Coomer.party downloader           | GPL-3.0 |
+| KHInsider script| Game soundtrack downloader        | Varies  |
+| IMH-backend        | imhentai.com gallery downloader   | GPL-3.0 |
+| Python 3.x      | Required runtime                 | PSF License |
+| Node.js         | Required for certain tools        | MIT |
 
 ---
 
@@ -60,6 +61,20 @@ These are the versions verified during development:
 Install Python dependencies:
 
     pip install -r requirements.txt
+
+  ---
+
+  ## IMH-backend Tool
+
+  The `IMH-backend` tool allows downloading galleries from imhentai.com via the unified `media` command or directly:
+
+    media https://imhentai.com/gallery/123456/
+
+  Or directly:
+
+    imhentai <gallery-url> [options]
+
+  See `tools/imhentai/README.md` for more details and options.
 
 ---
 
@@ -147,9 +162,10 @@ Downloads are saved to:
 
 Tool-specific subdirectories are automatically created:
 
-	M:\Downloads\gallery
-	M:\Downloads\coomer
-	M:\Downloads\khinsider
+  M:\Downloads\gallery
+  M:\Downloads\coomer
+  M:\Downloads\khinsider
+  M:\Downloads\imhentai
 ---
 
 ## Logging

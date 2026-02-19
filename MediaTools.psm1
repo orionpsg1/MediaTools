@@ -131,6 +131,18 @@ function coomer {
     Pop-Location
 }
 
+function imhentai {
+    param([Parameter(ValueFromRemainingArguments=$true)]$Args)
+
+    $ImhentaiPath = Join-Path $Script:ModuleRoot "tools\imhentai\main.py"
+
+    Write-MediaLog "imhentai $Args"
+
+    python3 $ImhentaiPath `
+        --output $Script:MediaRoot `
+        @Args
+}
+
 
 
 # ==============================
@@ -168,4 +180,4 @@ function media-update {
     Write-Host "Done."
 }
 
-Export-ModuleMember -Function media, media-update, ytd, gdl, khinsider, bunkr
+Export-ModuleMember -Function media, media-update, ytd, gdl, khinsider, bunkr, imhentai

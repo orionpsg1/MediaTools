@@ -26,3 +26,10 @@ browser-cookie3
 # Primary Tools
 yt-dlp
 gallery-dl
+
+# IMH-backend dependencies
+cloudscraper
+beautifulsoup4
+lxml
+tqdm
+requests
